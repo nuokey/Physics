@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &513004247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -426,4 +426,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorGravitation: 0
   rb: {fileID: 775700000}
-  CursorGravitationForce: 50

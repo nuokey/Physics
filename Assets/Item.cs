@@ -7,8 +7,8 @@ public class Item : MonoBehaviour
     public bool cursorGravitation;
     public Rigidbody2D rb;
 
-    public float CursorGravitationForce;
-    public float CursorGravitationTorqueForce;
+    private float CursorGravitationForce = 25f;
+    private float CursorGravitationTorque = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -43,7 +43,7 @@ public class Item : MonoBehaviour
 
             if (heading.x > 0)
             {
-                rb.AddTorque()
+                rb.AddTorque(CursorGravitationTorque / (heading.y * heading.y));
             }
 
             // var heading = 
